@@ -1,0 +1,48 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Task</title>
+    <style>
+      .error{
+        color:red
+      }
+      ul{
+        list-style: decimal;
+      }
+      li{
+        color:gray;
+      }
+      li span{
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div>
+            <label for="spanCountInput">Введите количество генерируемых span элементов</label>
+          <input
+            id="spanCountInput"
+            type="number"
+            min="1"
+            required
+          />
+          <button id="goToLastButton" disabled="true">Go to Last</button>
+          <span id="message" class="error"></span>
+        </div>
+        <p>Результат:</p>
+        <div>
+          <ul id="display">
+
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+  
+</html>
